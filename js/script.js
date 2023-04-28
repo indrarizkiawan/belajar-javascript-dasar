@@ -29,3 +29,23 @@ document.writeln("<hr>");
 document.writeln(true);
 document.writeln("<br>");
 document.writeln(false);
+document.writeln("<hr>");
+
+// Tipe data string
+document.writeln("Tipe Data String");
+document.writeln("<br>");
+document.writeln("Indra Rizkiawan");
+document.writeln("<hr>");
+
+document.writeln("Penggabung String menggunakan + concate");
+document.writeln("<br>");
+document.writeln("Nama : " + "Indra Rizkiawan");
+document.writeln("<hr>");
+
+document.writeln("<textarea cols='100' rows='10'>");
+document.writeln("Indra \nRizkiawan, \nST");
+document.writeln("\\Home\\Indra");
+document.writeln('"Indra Rizkiawan"');
+document.writeln("'Indra Rizkiawan'");
+document.writeln("</textarea>");
+document.writeln("<hr>");
