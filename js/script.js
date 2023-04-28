@@ -23,3 +23,9 @@ document.writeln(0b101010);
 document.writeln("<br>");
 document.writeln("Octal 0o10 : ");
 document.writeln(0o10);
+document.writeln("<hr>");
+
+// Tipe data boolean
+document.writeln(true);
+document.writeln("<br>");
+document.writeln(false);
