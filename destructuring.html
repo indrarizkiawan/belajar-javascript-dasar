@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Destructuring</title>
+  </head>
+  <body>
+    <script>
+      {
+        const names = [
+          "Indra Rizkiawan",
+          "Popi Afriani",
+          "Arumi Nasha Piandra",
+          "Shauma Nasywa Piandra",
+          "Rina Fitria",
+          "Desi Novita",
+        ];
+
+        // Destructuring
+        const [namaAyah, namaBunda, namaAnak1, namaAnak2, ...others] = names;
+        console.info(namaAyah);
+        console.info(namaBunda);
+        console.info(namaAnak1);
+        console.info(namaAnak2);
+        console.info(others);
+      }
+
+      //   Mengambil Data di Object
+      const person = {
+        namaAyah: "Indra Rizkiawan",
+        namaBunda: "Popi Afriani",
+        namaAnak1: "Arumi Nasha Piandra",
+        namaAnak2: "Shauma Nasywa Piandra",
+        address: {
+          jalan: "Jl. Bahari Desa Pulo Sarok Kecamatan Singkil",
+          kab: "Aceh Singkil",
+          negara: "Indonesia",
+        },
+        hobby: "Ngoding",
+        channel: "Anara Kids Style",
+      };
+      let {
+        namaAyah,
+        namaBunda,
+        address: { jalan, kab, negara },
+        ...others
+      } = person;
+      console.table(namaAyah);
+      console.table(namaBunda);
+      console.table(jalan);
+      console.table(kab);
+      console.table(negara);
+      console.table(others);
+
+      //  Destructuring function parameter
+      {
+        function displayPerson({ namaAyah, namaBunda, namaAnak1, namaAnak2 }) {
+          console.info(namaAyah);
+          console.info(namaBunda);
+          console.info(namaAnak1);
+          console.info(namaAnak2);
+        }
+        const person = {
+          namaAyah: "Indra Rizkiawan",
+          namaBunda: "Popi Afriani",
+          namaAnak1: "Arumi Nasha Piandra",
+          namaAnak2: "Shauma Naswa Piandra",
+        };
+        displayPerson(person);
+      }
+
+      {
+        function sum([first, second]) {
+          return first + second;
+        }
+        console.info(sum([10, 20]));
+        console.info(sum([30, 20]));
+      }
+
+      {
+        const names = ["Indra", "Rizkiawan"];
+        const [firstName, middleName, lastName = "Piandra"] = names;
+        console.info(firstName);
+        console.info(middleName);
+        console.info(lastName);
+      }
+    </script>
+  </body>
+</html>
