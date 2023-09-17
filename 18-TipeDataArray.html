@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>18. Tipe Data Array</title>
+  </head>
+  <body>
+    <script>
+      const arr = ["string", 100, true];
+      console.table(arr);
+
+      const names = [];
+      names.push("indra", "rizkiawan", "popi", "afriani", "arumi");
+
+      console.table(names);
+
+      const angka = [1, 2, 3, 4, 5];
+      console.table(angka);
+      angka.push(6);
+      angka.push(7);
+      angka.push(8);
+      console.table(angka);
+      console.table(angka.length);
+      console.table(angka[1]);
+      console.table((angka[1] = 23));
+      console.table(angka);
+      delete angka[1];
+      console.table(angka);
+    </script>
+  </body>
+</html>
