@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>14. Operator Logika</title>
+  </head>
+  <body>
+    <script>
+      // Operator logika digunakan untuk tipe data boolean
+      let a = true;
+      let b = false;
+      let result1 = a && b;
+      let result2 = a || b;
+      document.writeln("<p> a = " + a);
+      document.writeln("<br>");
+      document.writeln("<p> b = " + b);
+      document.writeln("<br>");
+      document.writeln("========================");
+      document.writeln("<p> a " + "&&" + " b " + " = " + result1 + "</p>");
+      document.writeln("<p> a " + "||" + " b " + " = " + result2 + "</p>");
+      document.writeln("========================");
+      document.writeln("<br>");
+      const nilaiUjian = 75;
+      const nilaiAbsen = 70;
+
+      const lulusUjian = nilaiUjian < 75;
+      const lulusAbsen = nilaiAbsen < 75;
+
+      const lulus = lulusUjian && lulusAbsen;
+      document.writeln(lulus);
+    </script>
+  </body>
+</html>
