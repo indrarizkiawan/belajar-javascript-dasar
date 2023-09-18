@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>19. Tipe Data Object</title>
+  </head>
+  <body>
+    <script>
+      // membuat object
+      const person = {};
+      // menambah atau mengubah
+      person["nama"] = "Indra Rizkiawan";
+      person["alamat"] = "Indonesia";
+      person["umur"] = 30;
+      console.table(person);
+
+      delete person["umur"];
+      console.table(person);
+
+      const merkMobil = {
+        nama: "Toyota",
+        harga: 230000000,
+        jumlah: 4,
+      };
+      console.table(merkMobil);
+      console.info(`Nama Mobil : ${merkMobil.nama}`);
+      console.info(`Harga : ${merkMobil.harga}`);
+      console.info(`Jumlah : ${merkMobil.jumlah}`);
+    </script>
+  </body>
+</html>
