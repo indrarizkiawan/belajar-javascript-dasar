@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>28. Operator In</title>
+  </head>
+  <body>
+    <script>
+      const person = {
+        firstName: "Indra Rizkiawan",
+        address: "Aceh Singkil",
+        noHp: undefined,
+      };
+      const result = "address" in person;
+
+      if (result) {
+        alert(`ada properti ${person.firstName}`);
+      } else {
+        alert(`tidak ada`);
+      }
+
+      if ("noHp" in person) {
+        alert(`heloo, ${person.noHp}`);
+      }
+    </script>
+  </body>
+</html>
