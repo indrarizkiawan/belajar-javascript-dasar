@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>42. With Statement</title>
+  </head>
+  <body>
+    <script>
+      // code
+      const person = {
+        firstName: "indra",
+        lastName: "rizkiawan",
+      };
+
+      console.log(person.firstName);
+      console.log(person.lastName);
+
+      with (person) {
+        console.log(firstName);
+        console.log(lastName);
+      }
+      // penggunaan with tidak direkomendasikan karena bisa jadi variablenya sama terjadi ambigu
+    </script>
+  </body>
+</html>
