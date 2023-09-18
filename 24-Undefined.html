@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>24. Undefined</title>
+  </head>
+  <body>
+    <script>
+      // undefined adalah sebuah tipe data
+      // merepresentasikan data belum di representasikan
+      let name;
+      // name = "indra";
+      if (name === undefined) {
+        alert("UNDEFINED");
+      } else {
+        alert("DEFINED");
+      }
+
+      const names = ["indra", "rizkiawan", "ST"];
+      if (names[2] === undefined) {
+        console.info("ARRAY UNDEFINED");
+      } else {
+        console.info("ARRAY DEFINED");
+      }
+
+      const person = {
+        name: "Indra rizkiawan",
+      };
+      if (person.name === undefined) {
+        console.info("OBJECT UNDEFINED");
+      } else {
+        console.info("OBJECT DEFINED");
+      }
+    </script>
+  </body>
+</html>
