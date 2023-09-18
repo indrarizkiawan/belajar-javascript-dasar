@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>23. PopUp Confirm</title>
+  </head>
+  <body>
+    <script>
+      // Confirm
+      const nama = confirm("Apakah anda ingin melanjutkan ? ");
+      if (nama == true) {
+        const inputNama = prompt("Masukkan nama anda : ");
+        document.writeln(
+          `<p>Hi, ${inputNama} terimakasih atas kunjungan anda !</p>`
+        );
+      } else {
+        document.writeln("Terimakasih! bye");
+      }
+    </script>
+  </body>
+</html>
