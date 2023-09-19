@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>59. Function Generator</title>
+  </head>
+  <body>
+    <script>
+      // code
+      // Function generator sederhana
+      function* createNames() {
+        yield "Indra";
+        yield "Rizkiawan";
+      }
+      // console.info(createNames());
+      const names = createNames();
+      for (const name of names) {
+        console.log(name);
+      }
+
+      function* buatGanjil(value) {
+        for (let i = 1; i <= value; i++) {
+          if (i % 2 === 1) {
+            yield i;
+          }
+        }
+      }
+      const angkaGanjil = buatGanjil(100);
+      for (const angka of angkaGanjil) {
+        console.info(angka);
+      }
+    </script>
+  </body>
+</html>
