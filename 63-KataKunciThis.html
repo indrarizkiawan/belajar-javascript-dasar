@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>63. Kata Kunci This</title>
+  </head>
+  <body>
+    <script>
+      // code
+      const sayHello = {
+        name: "Indra Rizkiawan",
+        sayHello: function (name) {
+          console.info(`hello ${name}, my name is ${this.name}`);
+        },
+      };
+      sayHello.sayHello("Popi Afriani");
+    </script>
+  </body>
+</html>
