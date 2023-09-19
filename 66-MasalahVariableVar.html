@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>66. Masalah Variable Var</title>
+  </head>
+  <body>
+    <script>
+      // code
+      // 1. var sudah tidak direkomendasikan untuk di pakai.
+      // 2. var tidak memiliki block scope
+      // 3. var tidak mengikat ke local scope
+      // 4. var tidak bisa diprediksi
+      let i = 20;
+      for (let i = 0; i < 10; i++) {
+        console.log(`local : ${i}`);
+      }
+      console.log(`Global ${i}`);
+
+      // kalau kita rubah let menjadi var
+      // maka akan terjadi variabel yang nilai awalnya 20 akan di override menjadi 10 seperti kode di atas kalau menggunakan variable `var`
+    </script>
+  </body>
+</html>
