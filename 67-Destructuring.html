@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>67. Destructuring</title>
+  </head>
+  <body>
+    <script>
+      // code
+      const names = [
+        "indra rizkiawan",
+        "popi afriani",
+        "arumi nasha piandra",
+        "shauma nashwa piandra",
+        "test1",
+        "test2",
+      ];
+      const [p1, p2, p3, p4, ...others] = names;
+      console.info(p1);
+      console.info(p2);
+      console.info(p3);
+      console.info(p4);
+      console.info(others[0]);
+      console.info(others[1]);
+
+      const person = {
+        firstName: "indra",
+        lastName: "rizkiawan",
+        address: {
+          desa: "Desa Pulo Sarok",
+          kabupaten: "Aceh Singkil",
+          negara: "Indonesia",
+        },
+        hobby: "Gaming",
+        channel: "indrarizkiawan",
+      };
+
+      let {
+        firstName,
+        lastName,
+        address: { desa, kabupaten, negara },
+        hobby,
+        channel,
+        ...lainlain
+      } = person;
+      console.info(firstName);
+      console.info(lastName);
+      console.info(desa);
+      console.info(kabupaten);
+      console.info(negara);
+      console.info(hobby);
+      console.info(channel);
+      console.info(lainlain);
+
+      //const firstName = person.firstName;
+      //const lastName = person.lastName;
+      //document.writeln(
+      //  `hi perkenalkan nama saya ${firstName} ${lastName} hobi saya ${person.hobby} saya berasal dari ${person.address.negara} tepatnya di kabupaten ${person.address.kabupaten} di desa ${person.address.desa}`
+      // );
+
+      // destructuring di function parameter
+      function displayPerson({ firstName, lastName }) {
+        console.info(firstName);
+        console.info(lastName);
+      }
+
+      const person1 = {
+        firstName: "indra",
+        lastName: "rizkiawan",
+      };
+      displayPerson(person1);
+    </script>
+  </body>
+</html>
