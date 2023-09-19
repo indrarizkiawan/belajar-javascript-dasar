@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>60. Arrow Function</title>
+  </head>
+  <body>
+    <script>
+      // code
+      const sayHello = (name) => {
+        const say = `Hello ${name}`;
+        console.info(say);
+      };
+      sayHello("indra");
+
+      const sayGoodbye = (name) => console.info(`goodbye ${name}`);
+      sayGoodbye("indra");
+
+      const sumblock = (angka1, angka2) => {
+        return angka1 + angka2;
+      };
+      console.info(sumblock(100, 100));
+
+      const sum = (angka1, angka2) => angka1 + angka2;
+      console.info(sum(100, 100));
+
+      // penggunaan arrow function jika parameternya cuma satu
+      const hello = (nama) => console.info(`hello ${nama}`);
+      hello("Indra");
+
+      function giveMeName(callback) {
+        callback("indra");
+      }
+      giveMeName((name) => console.info(`hello ${name}`));
+    </script>
+  </body>
+</html>
