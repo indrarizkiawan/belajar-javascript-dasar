@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>50. Rest Parameter</title>
+  </head>
+  <body>
+    <script>
+      // code rest parameter cuma ada 1 di function tidak boleh lebih
+      function sum(name, ...data) {
+        let total = 0;
+        for (const item of data) {
+          total += item;
+        }
+        console.info(`Total ${name} is ${total}`);
+      }
+      sum("apple", 1, 2, 3, 4, 5, 6, 7, 8);
+      sum("laptop", 1, 2, 3, 4, 5, 6, 7, 8);
+      sum("macbook-pro", 1, 2, 3, 4, 5, 6, 7, 8);
+
+      const values = [10, 10, 10, 10, 10];
+      sum("Test", ...values);
+
+      function oldSum() {
+        let total = 0;
+        for (const item of arguments) {
+          total += item;
+        }
+        console.info(`Total is ${total}`);
+      }
+      oldSum(1, 2, 3, 4, 5, 5);
+    </script>
+  </body>
+</html>
