@@ -17,6 +17,17 @@
       }
       console.info(factorial(5));
       console.info(1 * 2 * 3 * 4 * 5);
+
+      function factorialRecursive(value) {
+        // memanggil function dirinya sendiri
+        if (value === 1) {
+          return 1;
+        } else {
+          return value * factorialRecursive(value - 1);
+        }
+      }
+      console.info(factorialRecursive(5));
+      console.info(factorialRecursive(5));
     </script>
   </body>
 </html>
