@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>64. Object Method arrow function</title>
+  </head>
+  <body>
+    <script>
+      // code
+
+      const person = {
+        name: "indra rizkiawan",
+        sayHello: (name) => {
+          // ingat dimateri sebelumnya di arrow fucntion kita tidak bisa menggunakan kata kunci this , kalau menggunakan kata kunci this maka akan mengakses object window
+          console.log(this);
+          console.info(`hello ${name} my name is ${this.name}`);
+        },
+      };
+      person.sayHello("popi afriani");
+    </script>
+  </body>
+</html>
