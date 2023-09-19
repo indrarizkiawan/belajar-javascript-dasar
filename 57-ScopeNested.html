@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>57. Nested Scope</title>
+  </head>
+  <body>
+    <script>
+      function first() {
+        let var1 = "Pertama";
+        function second() {
+          console.info(var1);
+        }
+        second();
+      }
+
+      first();
+    </script>
+  </body>
+</html>
