@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>61. Closure</title>
+  </head>
+  <body>
+    <script>
+      // code
+      function createAdder(value) {
+        const owner = "Indra Rizkiawan";
+        function add(param) {
+          console.info(owner);
+          return value + param;
+        }
+        return add;
+      }
+      // lazy
+      const addTwo = createAdder(2);
+      console.info(addTwo(20));
+      console.info(addTwo(30));
+    </script>
+  </body>
+</html>
