@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>53. Function Anonymous di Parameter</title>
+  </head>
+  <body>
+    <script>
+      // code
+      // function tanpa nama
+      let say = function (name) {
+        console.info(`hello ${name}`);
+      };
+      say("function anonymous");
+
+      function giveMeName(callback) {
+        callback("Indra Rizkiawan");
+      }
+      giveMeName(function (name) {
+        console.info(`Hello ${name}`);
+      });
+    </script>
+  </body>
+</html>
